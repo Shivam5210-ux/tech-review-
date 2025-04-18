@@ -1,0 +1,417 @@
+<html>
+<head>
+<title>HOME Tech Reviewer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="tr1.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+/* Responsive Toggle */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: auto;
+  }
+}
+.about-section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-header {
+      text-align: center;
+    }
+
+    .about-header h2 {
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .about-header hr {
+      width: 100px;
+      border: 2px solid #4caf50;
+      margin: 10px auto;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .about-text {
+      flex: 1 1 50%;
+      padding: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .about-text ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about-text li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .about-text li::before {
+      content: "✔";
+      color: #4caf50;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .about-image {
+      flex: 1 1 40%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .about-image img {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      .about-text, .about-image {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      .about-text {
+        padding: 0;
+      }
+    }
+     .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .cols {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
+    }
+    h3 {
+      text-align: center;
+      color: #444;
+    }
+    hr {
+      border: 0;
+      border-top: 2px solid #eee;
+      margin: 15px 0;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+    .button a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      .cols {
+        margin: 20px 0;
+      }
+    }
+    /* Overall container */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Row to split the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Styling for each column (3 items per row) */
+.column {
+  flex: 1 1 30%; /* Each column takes up about 30% of the container */
+  max-width: 30%;
+  min-width: 280px; /* Ensures responsiveness on smaller screens */
+  margin-bottom: 20px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product title */
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for product image */
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Styling for the details section */
+.product-details {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.product-summary {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.product-summary:hover {
+  color: #008CBA;
+}
+
+/* Additional responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    max-width: 90%;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header class="navbar">
+	<div class="logo">
+	  <h1><i class="fa fa-mobile-alt"></i> MY TECH-REVIEW</h1>
+	</div>
+  
+	<nav class="nav-links" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="news.htm">News</a>
+	  <a href="About.html">About Us</a>
+	  <div class="social-icons">
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-github"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-header">
+      <h2>About Us</h2>
+      <hr>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <ul>
+          <li>Founded in 2025, TECH-REVIEWER is an ambitious tech media startup that aims to make people’s lives better by educating them on how to buy Mobile(s) in the most efficient way possible.</li>
+          <li>We publish Mobile recommendations, how-to’s, phone reviews, and useful tech news to help users keep up with the expanding technology.</li>
+          <li>As of September 2025, TechReviewer.com serves over 1.5 million monthly page views globally, while our YouTube channel serves over 1 million views every month.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<section style="border-top:5px solid black;border-bottom:5px solid black;background-color: darkgray;padding-bottom: 40px;padding-top: 30px">
+<div style="text-align: center;font-family:Montserrat;background-color: darkgray">
+        
+</section>
+
+<div class="container">
+  <div class="row">
+    <!-- Left Column with Useful Links -->
+    <div class="cols">
+      <h3>Useful links</h3>
+      <hr>
+      <p>&#9654; SUBSCRIBE TO OUR YT CHANNEL : <a href="https://www.youtube.com" target="_blank">TECH-REVIEWER</a></p>
+      <p>&#x25B6; Contact us at: <a href="mailto:techreviewer@hotmail.com">techreviewer@hotmail.com</a></p>
+      <p>&#9654;&copy; All Rights Reserved.</p>
+    </div>
+
+    <!-- Right Column with Review Buttons -->
+    <div class="cols">
+      <section>
+        <button class="button">
+          <a href="reviewform.html">
+            <span>Give Review</span>
+          </a>
+        </button>
+      </section>
+      <hr style="width: 40%; margin: 20px auto;">
+      <p>&#9632; If you have any recommendations or reviews, please drop them in the review form.</p>
+      <p>&#9632; Make sure reviews are honest and based on first-hand experience.</p>
+      <p>&#9632; <strong>UNBIASED REVIEWS ONLY.</strong></p>
+      <button class="button">
+        <a href="http://localhost/rev/feedback.php">
+          <span>See Reviews</span>
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+        <div>	<h3>&copy; 2019 TechReviewer.com <img src="tr1.jpg" width="30px">	<hr STYLE="border: 1px solid white; width:50%;">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+      </div>
+<script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        <script src="maps.js"></script>
+        </body>
+        </html>
+</body>
+</html>

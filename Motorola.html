@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>HOME Tech Reviewer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="tr1.jpg" type="image/gif" sizes="16x16">
+	<style>
+		.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+/* Responsive Toggle */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: auto;
+  }
+}
+/* Overall container */
+/* Overall container */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Row to split the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Styling for each column (3 items per row) */
+.column {
+  flex: 1 1 30%; /* Each column takes up about 30% of the container */
+  max-width: 30%;
+  min-width: 280px; /* Ensures responsiveness on smaller screens */
+  margin-bottom: 20px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product title */
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for product image */
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Styling for the details section */
+.product-details {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.product-summary {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.product-summary:hover {
+  color: #008CBA;
+}
+
+/* Additional responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    max-width: 90%;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+  }
+}
+
+	</style>
+</head>
+<body>
+	<header class="navbar">
+		<div class="logo">
+		  <h1><i class="fa fa-mobile-alt"></i> MY TECH-REVIEW</h1>
+		</div>
+	  
+		<nav class="nav-links" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="news.htm">News</a>
+		  <a href="About.html">About Us</a>
+		  <div class="social-icons">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-github"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		  </div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</nav>
+	  </header>
+
+	  <div class="container">
+		<div class="row">
+		  <div class="column">
+			<section class="product-card">
+			  <h1 class="product-title">Motorola Edge 60 5G</h1>
+			  <img src="https://cdn1.smartprix.com/rx-iChh8h2Bv-w280-h280/motorola-edge-60-ult.webp" class="product-image">
+			  <details class="product-details">
+				<summary class="product-summary"><b>&#8377; 18,999 (GST Included) &nbsp;&nbsp; &#9733; 10/10</b></summary>
+				<p>1. Display: 6.18-inch (1080x2246)</p>
+				<p>2. Chipset: Qualcomm Snapdragon 845</p>
+				<p>3. GPU: Adreno 640</p>
+				<p>4. RAM: 6GB</p>
+				<p>5. ROM: 128GB/256GB</p>
+				<p>6. Camera: 12MP + 5MP (Android 8.1)</p>
+			  </details>
+			</section>
+		  </div>
+	  
+		  <div class="column">
+			<section class="product-card">
+			  <h1 class="product-title">Motorola Edge 50 5G</h1>
+			  <img src="https://cdn1.smartprix.com/rx-iH9xyx2Rs-w280-h280/motorola-edge-50-5g.webp" class="product-image">
+			  <details class="product-details">
+				<summary class="product-summary"><b>&#8377; 12,299 (GST Included) &nbsp;&nbsp; &#9733; 8/10</b></summary>
+				<p>1. Display: Optic AMOLED Capacitive touchscreen</p>
+				<p>2. Chipset: Snapdragon 675</p>
+				<p>3. Storage: 64GB</p>
+				<p>4. RAM: 4GB</p>
+				<p>5. ROM: 128GB/256GB</p>
+				<p>6. Camera: 48 MP + 5 MP</p>
+			  </details>
+			</section>
+		  </div>
+		  
+		  <div class="column">
+			<section class="product-card">
+			  <h1 class="product-title">Motorola Edge 60 Stylus</h1>
+			  <img src="https://cdn1.smartprix.com/rx-idCeQoeVJ-w280-h280/motorola-edge-60-sty.webp" class="product-image">
+			  <details class="product-details">
+				<summary class="product-summary"><b>&#8377; 14,599 (GST Included) &nbsp;&nbsp; &#9733; 8/10</b></summary>
+				<p>1. Display: 5.50-inch (1080x1920)</p>
+				<p>2. Chipset: Qualcomm Snapdragon 625</p>
+				<p>3. OS: Android 7.1.2</p>
+				<p>4. RAM: 4GB</p>
+				<p>5. ROM: 128GB/256GB</p>
+				<p>6. Camera: 12MP + 5MP</p>
+			  </details>
+			</section>
+		  </div>
+		</div>
+	  
+		<!-- Add more rows with 3 products each if needed -->
+	  </div>
+	  
+	  
+ <div class="footer">
+	<div>	<h3>&copy; 2019 TechReviewer.com <img src="tr1.jpg" width="30px">	<hr STYLE="border: 1px solid white; width:50%;">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		
+		
+		
+	</div>
+  </div>
+
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+	
+			 
+		

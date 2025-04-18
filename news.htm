@@ -1,0 +1,447 @@
+<html>
+<head>
+  <title>HOME Tech Reviewer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="icon" href="tr1.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+/* Responsive Toggle */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: auto;
+  }
+}
+.headline {
+      text-align: center;
+      font-size: 2vw;
+      font-weight: 700;
+      color: white;
+      background-color: #607d8b;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 30px auto;
+      width: 60%;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      border-radius: 10px;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .fade {
+      animation: fadeEffect 1.5s ease-in-out;
+    }
+
+    @keyframes fadeEffect {
+      from {opacity: 0.4}
+      to {opacity: 1}
+    }
+
+    /* Responsive Headline */
+    @media screen and (max-width: 768px) {
+      .headline {
+        font-size: 5vw;
+        width: 90%;
+        padding: 15px;
+      }
+    }
+    .news-heading {
+      background-color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 2vw;
+      color: #121212;
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 4px;
+      background-color: black;
+      margin: 0;
+    }
+
+    .news-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .news-card {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-card h3 {
+      font-size: 1.1rem;
+      padding: 15px;
+      color: #ffffff;
+    }
+
+    .news-card a {
+      text-decoration: none;
+      color: #00bcd4;
+    }
+
+    @media (max-width: 768px) {
+      .news-heading {
+        font-size: 5vw;
+      }
+
+      .news-card {
+        width: 90%;
+      }
+    }
+    
+
+</style>
+</head>
+<body>
+<header class="navbar">
+	<div class="logo">
+	  <h1><i class="fa fa-mobile-alt"></i> MY TECH-REVIEW</h1>
+	</div>
+  
+	<nav class="nav-links" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="news.htm">News</a>
+	  <a href="About.html">About Us</a>
+	  <div class="social-icons">
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-github"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</nav>
+  </header>
+ 
+ <div style = "margin-left: auto; margin-right: auto; width: 50%;">
+		<h2 align="center" style="font-size:2vw; font-family:verdana;" >IMPACT.INSPIRE.EMPOWER </h2>
+ </div>
+ <div style="background-color: #2b2b2b;">
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="newspic/slideimg/ok4.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="newspic/slideimg/ok1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="newspic/slideimg/ok.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="newspic/slideimg/ok3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+          <img src="newspic/slideimg/ok5.jpg" style="width:100%">
+        </div>
+    
+    </div>
+  </div>
+</section>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+ <br>
+<br>
+
+<h2  style="height:2%;background-color:black;"></h2>
+
+<section>
+<div class="spec">
+    <div class="s-20">
+      <p style="font-size:1.4vw">TOTAL REVIEWS GIVEN</p>
+      <h1 >3799</h1>
+      <p></p>
+    </div>
+     <div class="s-20">
+        <p style="font-size:1.4vw">SUCCESS STORIES</p>
+        <h1>965</h1>
+        <p></p>
+      </div>
+      <div class="s-20" >
+          <p style="font-size:1.4vw">SUBS</p>
+          <h1>65K </h1><p>
+          
+        </div>
+        <div class="s-20" >
+            <p style="font-size:1.4vw">BRANDS REVIEWED</p>
+            <h1>27</h1>
+            <p></p>
+          </div>
+        <div class="s-20" >
+              <p style="font-size:1.4vw">USERS</p>
+              <h1>754k</h1>
+              <p></p>
+           </div>
+      
+</div>
+</section>
+ <div class="divider"></div>
+  <h2 class="news-heading">Latest Tech News</h2>
+  <div class="divider"></div>
+
+  <section class="news-section">
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz5.jpg" alt="iOS 13 Features"></a>
+      <h3><a href="#">Top iOS 13 New Features</a></h3>
+    </div>
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz2.jpeg" alt="Google Play Pass"></a>
+      <h3><a href="#">Everything You Need to Know About Google Play Pass</a></h3>
+    </div>
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz1.jpeg" alt="MSI GF63"></a>
+      <h3><a href="#">MSI GF63: The Budget Gaming Laptop to Buy Right Now</a></h3>
+    </div>
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz6.jpeg" alt="Pixel 4 Specs"></a>
+      <h3><a href="#">Pixel 4 and 4 XL Complete Specs Sheet Leaked Online</a></h3>
+    </div>
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz7.jpeg" alt="iOS 13 Privacy"></a>
+      <h3><a href="#">10 Tips to Improve Security and Privacy in iOS 13</a></h3>
+    </div>
+
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz8.jpeg" alt="OnePlus 8 Renders"></a>
+      <h3><a href="#">OnePlus 8 Renders Show Punch-hole Camera; Wireless Charging Rumored</a></h3>
+    </div>
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz8.jpeg" alt="OnePlus 8 Renders"></a>
+      <h3><a href="#">OnePlus 8 Renders Show Punch-hole Camera; Wireless Charging Rumored</a></h3>
+    </div>
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz8.jpeg" alt="OnePlus 8 Renders"></a>
+      <h3><a href="#">OnePlus 8 Renders Show Punch-hole Camera; Wireless Charging Rumored</a></h3>
+    </div>
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz8.jpeg" alt="OnePlus 8 Renders"></a>
+      <h3><a href="#">OnePlus 8 Renders Show Punch-hole Camera; Wireless Charging Rumored</a></h3>
+    </div>
+    <div class="news-card">
+      <a href="#"><img src="newspic/newz8.jpeg" alt="OnePlus 8 Renders"></a>
+      <h3><a href="#">OnePlus 8 Renders Show Punch-hole Camera; Wireless Charging Rumored</a></h3>
+    </div>
+
+  </section>
+
+<h2  style="height:2%;background-color:black;"></h2>
+<div class="row">
+			<div class="cols">
+					<div style="padding-left:40px;padding-top: 20px;padding-bottom:20px;">
+							<img src="newspic/realme.jpg" style="width:80%;border-radius: 20px;" class="image">
+					</div>
+			</div>
+			
+			<div class="cols">
+					<h1 style="text-align: center; font-size:20px ">Realme X2 Proto Debut With Dual Stereo and Dolby Atmos Audio</h1>
+          <p style="font-family: Montserrat;font-weight: light;font-size:1.3vw">Realme X2 Pro,the flagship Realme phone, 
+            is set to debut with dual stereo speakers. The new development follows the previous teasers of the Realme X2 Pro that
+             highlighted its 50W SuperVOOC Flash Charge fast charging support. The new Realme smartphone is expected to take on the Redmi
+             K20 Pro with an octa-core Qualcomm Snapdragon 855+ SoC.
+<br>
+            As per the tweet posted by the Realme Europe account, the Realme X2 Pro will sport dual stereo speakers along with Dolby Atmos surround sound technology. The handset is also touted to deliver certified Hi-Res sound quality.</p>
+			</div>
+</div>
+
+<div>	<h2  style="height:2%;background-color:black;"></h2>	</div>
+<div class="row">
+
+		<div class="cols">
+					<div style="padding-left:40px;padding-top: 20px;padding-bottom:20px;">
+							<img src="newspic/h.jpg" style="width:80%;border-radius: 20px;" class="image">
+					</div>
+			</div>
+			
+			<div class="cols">
+					<h1 style="text-align: center;font-size: 22px;">iPhone 11 Pro Production Raised by Around 10 Percent</h1>
+          <p style="font-family: Montserrat;font-weight: light;font-size:1.3vw;">After the increase, prepared production volume for
+             the iPhone 11₹ 64,900 series will be higher compared to last year".
+              Sources cited by Nikkei said that the recent surge in iPhone orders is concentrated in the cheapest iPhone 11 model
+               and the iPhone 11 Pro₹ 99,900 model, while Apple has slightly revised down orders for its top range model, the iPhone 11 
+               Pro Max₹ 104,405, which has a starting price of $1,099 (Rs. 1,09,900 in India).
+                </p>
+			</div>
+		</div>
+
+
+
+<div>	<h2  style="height:2%;background-color:black;"></h2>	</div>
+<div class="row">
+		<div class="cols">
+			
+					<div style="padding-left:40px;padding-top: 20px;padding-bottom:20px;">
+							<img src="newspic/esp.jpeg" style="width:80%;border-radius: 20px;" class="image">
+					</div>
+			</div>
+			
+			<div class="cols">
+					<h1 style="text-align: center;font-size: 20px;">Ready Student One? Universities Launch Degrees in E-Sports</h1>
+          <p style="font-family: Montserrat;font-weight: light;font-size:1.3vw;">On their first week in class, a group of students is 
+            playing a first-person shooter video game in a sleek new digital studio. It's their introduction to the degree in esports 
+            they've all enrolled in.
+
+              The group clicking away on their mice are at the University of Staffordshire, one of several UK and US schools launching 
+              programs aimed at capitalising on the booming industry's need for skilled professionals.
+
+              The global esports market is expected to surge to $1.1 billion this year, up $230 million from 2018 on growth in sponsorships, merchandise and ticket sales, according to Newzoo. </p>
+			</div>
+		</div>
+<div class="footer">
+<div>
+<h3>&copy; 2019 TechReviewer.com <img src="tr1.jpg" width="30px">
+<hr STYLE="border: 1px solid white; width:50%;">
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+</body>
+</html>
